@@ -1,9 +1,12 @@
-object pepita {
-  var energy = 100
+object tito {
+  var peso = 70
+  var rendimiento = 0
 
-  method energy() = energy
+  method consumir(cantidad, bebida) {
+   
+  }
 
-  method fly(minutes) {
-    energy = energy - minutes * 3
+  method velocidad() {
+    velocidad = (bebida.rendimiento() * 490kg*m/s) / tito.peso()
   }
 }
