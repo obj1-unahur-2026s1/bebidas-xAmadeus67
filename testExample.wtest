@@ -1,0 +1,13 @@
+import bebidas.*
+import Tito.*
+
+describe "pruebas de rendimiento de tito con distintas sustancias" {
+
+  test "el rendimiento de tito sin consumir sustancias es 5" {
+    assert.equals(5, tito.rendimiento())
+  }
+  test "el rendimiento de tito luego de consumir 100ml de whisky es 6" {
+    tito.consumir(100,whisky)
+    assert.equals(6, tito.rendimiento().roundDown())
+  }
+}
